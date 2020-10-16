@@ -12,8 +12,7 @@
           .container{
             margin: auto;
             width: 600px;
-            align-items: center
-            
+            align-items: center            
           }
          /* Style the header */
           .logo {
@@ -25,11 +24,9 @@
             text-transform: uppercase;
             margin-bottom: 5px;
           }
-
           /* texto abaixo do logo */
           .sup-inf{
-            font-family: Arial;
-            
+            font-family: Arial;           
           }
           #t1{
             margin-top: 5px;
@@ -59,42 +56,42 @@
           .btn-prod{
             background-color: #FCCE19;
             padding: 14px 25px;
-            margin: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            margin: 30px auto;
+            display: block;
             font-size: 30px;
             font-family: Arial, Helvetica, sans-serif;
             border-radius: 10px;
             border: none;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            text-transform: uppercase;
-            text-decoration: none;
           }
           .btn-prod a{
-            
+            text-transform: uppercase;
             color: #333333;
-            
+            text-decoration: none;
           }
             /* texto superior aos botões */
           .container-txt{
             width: 600px;
-            height: 120px;
+            height: 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
           }
           .txt-sub p{
-
             display: flex;
             color: #333333;
             font-size: 25px;
             font-weight: 500;
             text-transform: uppercase;
           }
+
+          #id-cat{
+            margin-right: 15px;
+          }
           /* Botões web site */
 
           .container-btn{
+            margin-top: 40px;
             display: flex;
             width: 600px;
             justify-content: space-between;
@@ -144,6 +141,37 @@
           height: 70px;
                         
           }
+          /* cards finais */
+          .content{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            width: 600px;
+          }
+          .card{
+            background: #ffffff;
+            border-radius: 10px 10px 0px 0;
+            box-shadow: 0px 2px 23px #26395338;
+          }
+          .MediaCard{
+            width: 190px;
+            height: 350px;
+          }
+          .MediaCard img{
+            width: 100%;
+            height: 350;
+            padding: auto;
+            align-content: center;
+          }
+          .top-card{
+            text-align: center;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+          }
+
+          /* media */
 
           @media (max-width: 600px){  
             section{
@@ -151,7 +179,6 @@
               flex-direction: column;
             }
           }
-          
       </style>
   </head>
 <body>
@@ -167,11 +194,11 @@
       <img src="../img/banner-principal.png">
     </section>
     <section>
-      <a href="https://www.bozza.com/produto/14020-max-g4/"><button class="btn-prod" type="button">Mais detalhes</button></a>
+      <button class="btn-prod" type="button"><a href="https://www.bozza.com/produto/14020-max-g4/">Mais detalhes</a></button>
       <div class="container-txt"> 
           <div class="txt-sub"><p>web site</p></div>
           <div class="txt-sub"><p>assistencia</p></div>
-          <div class="txt-sub"><p>catalogo</p></div>
+          <div class="txt-sub"><p id="id-cat">catalogo</p></div>
       </div>
       <div class="container-btn">
           <a href="https://www.bozza.com/"><button class="btns-pls" type="button"><img id="svg" src="../img/globalization.svg "></button></a>
@@ -186,6 +213,44 @@
           <a href="https://www.linkedin.com/company/bozza/"><img class="social" src="../img/linkedin.svg"></a>
           <a href="https://www.youtube.com/user/JMBOZZA"><img class="social" src="../img/youtube.svg"></a>   
       </div>
+
+      <p id="id-mkt">Produtos Relacionados</p>
+      <div class="content">
+        <div class="card">
+          <div class="top-card">
+            <h3>MOD: 16020-G4</h3>
+            <div class="MediaCard"><img src="../img/16020-G4.png"></div>
+            <div class="BottomVard">
+              <div class="ActionsCard">
+                <button class="actions">Ver Produto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-card">
+            <h3>MOD: 11020-r20-G4 </h3>
+            <div class="MediaCard"><img src="../img/11020---G4--R20.png" alt=""></div>
+            <div class="BottomVard">
+              <div class="ActionsCard">
+                <button class="actions">Ver Produto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-card">
+            <h3>MOD: 11021-G4</h3>
+            <div class="MediaCard"><img src="../img/11021-E-G4.png" alt=""></div>
+            <div class="BottomVard">
+              <div class="ActionsCard">
+                <button class="actions">Ver Produto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
     </section>
   </div>
 </body> 
