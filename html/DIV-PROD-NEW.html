@@ -60,29 +60,45 @@
             background-color: #FCCE19;
             padding: 14px 25px;
             margin: 30px;
-            
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             font-size: 30px;
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
             border-radius: 10px;
             border: none;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            
+            text-transform: uppercase;
+            text-decoration: none;
           }
           .btn-prod a{
-            text-decoration: none;
+            
             color: #333333;
+            
+          }
+            /* texto superior aos botões */
+          .container-txt{
+            width: 600px;
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .txt-sub p{
+
+            display: flex;
+            color: #333333;
+            font-size: 25px;
+            font-weight: 500;
             text-transform: uppercase;
           }
           /* Botões web site */
 
           .container-btn{
-            display: inline-flexbox;
+            display: flex;
             width: 600px;
-            justify-content: space-around;
+            justify-content: space-between;
+            align-items: center;
           }
 
           .btns-pls{
@@ -111,18 +127,19 @@
             margin-top: 5px;
             height: 30px;
           }
-          .txt-sub p{
-            color: #333333;
-            font-size: 25px;
-            font-weight: 500;
-            text-transform: uppercase;
-          }
+          
           .social-cont{
-          align-content: center;
-          width: 600px;
+          margin-top: 40px;
+          height: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
           }
 
           .social{
+            margin-left: 30px;
+            margin-right: 30px;
+          display: flex;
           width: 70px;
           height: 70px;
                         
@@ -150,31 +167,25 @@
       <img src="../img/banner-principal.png">
     </section>
     <section>
-      <button class="btn-prod" type="button">
-        <a href="https://www.bozza.com/produto/14020-max-g4/">Mais detalhes</a>
-      </button> 
-      <div class="container-txt">
-        <ul >
+      <a href="https://www.bozza.com/produto/14020-max-g4/"><button class="btn-prod" type="button">Mais detalhes</button></a>
+      <div class="container-txt"> 
           <div class="txt-sub"><p>web site</p></div>
           <div class="txt-sub"><p>assistencia</p></div>
           <div class="txt-sub"><p>catalogo</p></div>
-        </ul>
       </div>
       <div class="container-btn">
-        <ul>
-          <button class="btns-pls" type="button"><a href="https://www.bozza.com/"><img id="svg" src="../img/globalization.svg " ></a></button>
-          <button class="btns-pls" type="button"><a href="https://www.bozza.com/assistencias/"><img id="svg" src="../img/chave.svg" alt=""></a></button>
-          <button class="btns-pls" type="button"><a href="https://www.bozza.com/catalogo-on-line/"><img id="svg" src="../img/catalogo.svg" alt=""></a></button>
-        </ul> 
+          <a href="https://www.bozza.com/"><button class="btns-pls" type="button"><img id="svg" src="../img/globalization.svg "></button></a>
+          <a href="https://www.bozza.com/assistencias/"><button class="btns-pls" type="button"><img id="svg" src="../img/chave.svg"></button></a>
+          <a href="https://www.bozza.com/catalogo-on-line/"><button class="btns-pls" type="button"><img id="svg" src="../img/catalogo.svg"></button></a>
       </div>  
     </section>
     <section>
-      <ul class="social-cont" >
-        <a href="https://www.facebook.com/bozza.oficial"><img class="social" src="../img/facebook.svg"></a>
-        <a href="https://www.instagram.com/bozzaoficial/"><img class="social" src="../img/instagram.svg"></a>
-        <a href="https://www.linkedin.com/company/bozza/"><img class="social" src="../img/linkedin.svg"></a>
-        <a href="https://www.youtube.com/user/JMBOZZA"><img class="social" src="../img/youtube.svg"></a>
-      </ul>
+      <div class="social-cont">       
+          <a href="https://www.facebook.com/bozza.oficial"><img class="social" src="../img/facebook.svg"></a>
+          <a href="https://www.instagram.com/bozzaoficial/"><img class="social" src="../img/instagram.svg"></a>
+          <a href="https://www.linkedin.com/company/bozza/"><img class="social" src="../img/linkedin.svg"></a>
+          <a href="https://www.youtube.com/user/JMBOZZA"><img class="social" src="../img/youtube.svg"></a>   
+      </div>
     </section>
   </div>
 </body> 
